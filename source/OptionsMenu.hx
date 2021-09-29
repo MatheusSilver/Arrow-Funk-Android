@@ -42,16 +42,21 @@ class OptionsMenu extends MusicBeatState
 		]),
 		
 		new OptionCategory("trens", [
-			new FPSOption("Toggle the FPS Counter"),
-			new FlashingLightsOption("Toggle flashing lights that can cause epileptic seizures and strain."),
-			new BotPlay("Showcase your charts and mods with autoplay.")
-		])#if mobileC ,
+			new FPSOption("Mosra ou não o FPS"),
+			new FlashingLightsOption("Tira as luzes piscantes"),
+			new BotPlay("IIIIIIII AREGOU")
+		]),
 
 		new OptionCategory("Config mobile", [
 			new CustomControls("Customize controles e talz"),
 			new About("O MANO QUE PORTOU A PARADA")
-		]) #end
-		
+		]),
+
+		new OptionCategory("Optimizacao", [
+			new GfOptim("Tire a GF do game simplesmente, menos trabalho para os caras da otimização"),
+			new antialiasingyeah("Coisa que quase ninguem percebe, mas serve pra deixar a borda mais bonita (E jogo mais pesado)"),
+			new CenarioOptim("Remova os cenários do game")
+		])
 	];
 
 	public var acceptInput:Bool = true;

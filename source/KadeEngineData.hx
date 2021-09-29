@@ -77,9 +77,18 @@ class KadeEngineData
 
 		if (FlxG.save.data.strumline == null)
 			FlxG.save.data.strumline = false;
+
+		if (FlxG.save.data.antialiasing == null)
+			FlxG.save.data.antialiasing = true;
+
+		if (FlxG.save.data.cpuStrums == null)
+			FlxG.save.data.cpuStrums = false;
+
+		if (FlxG.save.data.strumline == null)
+			FlxG.save.data.cenoptim = true;
 		
 		if (FlxG.save.data.customStrumLine == null)
-			FlxG.save.data.customStrumLine = 0;
+			FlxG.save.data.gfoptim = true;
 
 		Conductor.recalculateTimings();
 		PlayerSettings.player1.controls.loadKeyBinds();

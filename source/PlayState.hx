@@ -355,7 +355,7 @@ class PlayState extends MusicBeatState
 
 		switch(SONG.stage)
 		{
-			case 'spookyparty':
+			case 'spookyparty && FlxG.save.data.cenoptim':
 					{
 						defaultCamZoom = 0.63;
 						curStage = 'spookyparty';
@@ -399,7 +399,7 @@ class PlayState extends MusicBeatState
 
 					}
 
-					case 'spookypartyEvil':
+					case 'spookypartyEvil && FlxG.save.data.cenoptim':
 						{
 							defaultCamZoom = 0.63;
 							curStage = 'spookypartyEvil';
@@ -442,7 +442,7 @@ class PlayState extends MusicBeatState
 	
 						}
 						
-			case 'stage':
+			case 'stage && FlxG.save.data.cenoptim':
 				{
 						defaultCamZoom = 0.55;
 						curStage = 'stage';
@@ -474,7 +474,7 @@ class PlayState extends MusicBeatState
 						bg.active = false;
 						add(bg);
 				}
-			case 'stagetutorial':
+			case 'stagetutorial && FlxG.save.data.cenoptim':
 					{
 						defaultCamZoom = 0.65;
 						curStage = 'stagetutorial';
@@ -510,7 +510,7 @@ class PlayState extends MusicBeatState
 			default:
 			{
 					defaultCamZoom = 0.55;
-						curStage = 'stage';
+						curStage = 'stage && FlxG.save.data.cenoptim';
 
 						var bg:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladadentro/layer1'));
 						if(FlxG.save.data.antialiasing)
@@ -713,8 +713,8 @@ class PlayState extends MusicBeatState
 				gf.x += 180;
 				gf.y += 300;
 		}
-
-		add(gf);
+		if(FlxG.save.data.gfoptim)
+			add(gf);
 
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
@@ -723,13 +723,13 @@ class PlayState extends MusicBeatState
 		add(dad);
 		add(boyfriend);
 
-		if (curStage == 'spookyparty')
+		if (curStage == 'spookyparty' && FlxG.save.data.cenoptim)
 		{
 			add(spookybglights);
 
 		}
 
-		if (curStage == 'spookypartyEvil')
+		if (curStage == 'spookypartyEvil' && FlxG.save.data.cenoptim)
 			{
 				add(spookybglights);
 				add(screenacid);
