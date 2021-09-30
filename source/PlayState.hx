@@ -3485,6 +3485,8 @@ class PlayState extends MusicBeatState
 		{
 		//hey
 
+		//mensagem para a nashira: Eu coloquei isso de volta pois achei : D
+
 					if (curStep == 128)
 						{
 						boyfriend.playAnim('hey', true);
@@ -4054,7 +4056,7 @@ class PlayState extends MusicBeatState
 				add(dad);
 			}
 
-		//"O importante não é ficar bonito, o importante é funcionar" Gambiarras, Silver, 2021 : D
+		//"O importante não é ficar bonito, o importante é funcionar, e tambem que ninguem perceba..." Gambiarras, Silver, 2021 : D
 
 			if (curStep == 2176)
 			{
