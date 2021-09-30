@@ -49,13 +49,15 @@ class OptionsMenu extends MusicBeatState
 
 		new OptionCategory("Config mobile", [
 			new CustomControls("Customize controles e talz"),
-			new About("O MANO QUE PORTOU A PARADA")
+			new About("O MANO QUE PORTOU A PARADA"),
 		]),
-
+		
 		new OptionCategory("Optimizacao", [
-			new GfOptim("Tire a GF do game simplesmente, menos trabalho para os caras da otimização"),
-			new antialiasingyeah("Coisa que quase ninguem percebe, mas serve pra deixar a borda mais bonita (E jogo mais pesado)"),
-			new CenarioOptim("Remova os cenários do game")
+			new GfOptim("Tire a GF do game"),
+			new Antialiasingyeah("Coisa que quase ninguem percebe, mas serve pra deixar a borda mais bonita"),
+			new Sicksresponse("Remova as mensagens de combo e sicks do game"),
+			new CenarioOptim("Remova os cenários do game"),
+			new DistractionsAndEffectsOption("Tire alguns efeitos leves do game")
 		])
 	];
 

@@ -383,7 +383,7 @@ class PlayState extends MusicBeatState
 							add(phillyCityLights);
 						}
 
-						for (i in 0...5)
+						for (i in 0...2)
 						{
 							var light:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/dancefloor' + i, 'shared'));
 							light.scrollFactor.set(1, 1);
@@ -509,9 +509,10 @@ class PlayState extends MusicBeatState
 					}
 			default:
 			{
+				if(FlxG.save.data.cenoptim)
+				{
 					defaultCamZoom = 0.55;
-						curStage = 'stage && FlxG.save.data.cenoptim';
-
+						curStage = 'stage';
 						var bg:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladadentro/layer1'));
 						if(FlxG.save.data.antialiasing)
 							{
@@ -538,6 +539,7 @@ class PlayState extends MusicBeatState
 						bg.scrollFactor.set(0.88, 0.9);
 						bg.active = false;
 						add(bg);
+				}
 			}
 		}
 		var gfVersion:String = 'gf';
@@ -2761,7 +2763,7 @@ class PlayState extends MusicBeatState
 			if (currentTimingShown.alpha != 1)
 				currentTimingShown.alpha = 1;
 
-			if(!FlxG.save.data.botplay) add(currentTimingShown);
+			if(FlxG.save.data.sicked) add(currentTimingShown);
 			
 			var comboSpr:FlxSprite = new FlxSprite().loadGraphic(Paths.image(pixelShitPart1 + 'combo' + pixelShitPart2));
 			comboSpr.screenCenter();
@@ -2778,7 +2780,7 @@ class PlayState extends MusicBeatState
 	
 			comboSpr.velocity.x += FlxG.random.int(1, 10);
 			currentTimingShown.velocity.x += comboSpr.velocity.x;
-			if(!FlxG.save.data.botplay) add(rating);
+			if(FlxG.save.data.sicked)  add(rating);
 	
 			if (!curStage.startsWith('school'))
 			{
@@ -3482,8 +3484,6 @@ class PlayState extends MusicBeatState
 		else if (curSong == 'Reboop') 
 		{
 		//hey
-			/*
-				/Descartado, mas vou deixar aqui mesmo assim caso alguém encontre
 
 					if (curStep == 128)
 						{
@@ -3518,7 +3518,6 @@ class PlayState extends MusicBeatState
 						boyfriend.playAnim('hey', true);
 						gf.playAnim('cheer', true);
 						}
-				*/
 
 		//zoom
 						if (curStep == 128)
@@ -4038,6 +4037,25 @@ class PlayState extends MusicBeatState
 		}
 		else if (curSong == 'Nightfall') 
 		{	
+
+		//IT'S GAMBIARRA TIMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE spookykids
+
+			if (curStep == 40)
+			{
+				remove(dad);
+				dad = new Character(-80, 140, 'spookykids-happy');
+				add(dad);
+			}
+
+			if (curStep == 120)
+			{
+				remove(dad);
+				dad = new Character(-80, 140, 'spookykids');
+				add(dad);
+			}
+
+		//"O importante não é ficar bonito, o importante é funcionar" Gambiarras, Silver, 2021 : D
+
 			if (curStep == 2176)
 			{
 				remove(dad);

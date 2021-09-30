@@ -252,7 +252,7 @@ class DistractionsAndEffectsOption extends Option
 
 	private override function updateDisplay():String
 	{
-		return "Distractions " + (!FlxG.save.data.distractions ? "off" : "on");
+		return "Efeitos Visuais " + (!FlxG.save.data.distractions ? "desligado" : "ligado");
 	}
 }
 
@@ -518,7 +518,29 @@ class GfOptim extends Option
 	}
 }
 
-class antialiasingyeah extends Option
+class Sicksresponse extends Option
+{
+	public function new(desc:String)
+	{
+		super();
+		description = desc;
+	}
+
+	public override function press():Bool
+	{
+		FlxG.save.data.sicked = !FlxG.save.data.sicked;
+		(cast (Lib.current.getChildAt(0), Main)).changeFPSColor(FlxColor.WHITE);
+		display = updateDisplay();
+		return true;
+	}
+
+	private override function updateDisplay():String
+	{
+		return "" + (!FlxG.save.data.sicked ? "Sem rating" : "com rating");
+	}
+}
+
+class Antialiasingyeah extends Option
 {
 	public function new(desc:String)
 	{
@@ -536,7 +558,7 @@ class antialiasingyeah extends Option
 
 	private override function updateDisplay():String
 	{
-		return "serrilhado" + (!FlxG.save.data.antialiasing ? "desligado" : "ligado");
+		return "serrilhado " + (!FlxG.save.data.antialiasing ? "desligado" : "ligado");
 	}
 }
 
@@ -558,7 +580,7 @@ class CenarioOptim extends Option
 
 	private override function updateDisplay():String
 	{
-		return "" + (!FlxG.save.data.cenoptim ? "sem gf" : "com gf");
+		return "" + (!FlxG.save.data.cenoptim ? "Sem cenario" : "com cenario");
 	}
 }
 

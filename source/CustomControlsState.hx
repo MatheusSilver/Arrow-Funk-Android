@@ -38,7 +38,7 @@ class CustomControlsState extends MusicBeatSubstate
 	var leftArrow:FlxSprite;
 	var rightArrow:FlxSprite;
 							//'hitbox',
-	var controlitems:Array<String> = ['right control', 'left control','keyboard','custom', 'hitbox'];
+	var controlitems:Array<String> = ['Controle Destro', 'Controle Canhoto','TecladO','Customizado', 'Hitbox'];
 
 	var curSelected:Int = 0;
 

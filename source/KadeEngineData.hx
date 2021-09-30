@@ -33,6 +33,9 @@ class KadeEngineData
 			FlxG.save.data.changedHit = false;
 		}
 
+		if (FlxG.save.data.sicked == null)
+			FlxG.save.data.sicked = true;
+
 		if (FlxG.save.data.fpsRain == null)
 			FlxG.save.data.fpsRain = false;
 
