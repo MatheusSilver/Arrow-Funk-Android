@@ -28,6 +28,7 @@ class OptionsMenu extends MusicBeatState
 			new DFJKOption(controls),
 			new DownscrollOption("Para o Nexxy e Marcelo e Max Extremo e as crias deles"),
 			new GhostTapOption("Seja punido, ou não, por apertar errado"),
+			new Ultimaopcaoprometo("He is Back!"),
 			new Judgement("Customize seu tempo de resposta (Esquerda e direita), espero que isso funcione"),
 			new FPSCapOption("Muda o limite de FPS do jooj"),
 			new ScrollSpeedOption("Muda a velocidade do scroll (1 = Padrão)"),
@@ -43,6 +44,7 @@ class OptionsMenu extends MusicBeatState
 		
 		new OptionCategory("trens", [
 			new FPSOption("Mosra ou não o FPS"),
+			new Osukengo("Ok... Só falta querer jogar osu... Não... Espera, NEM PENSE EM ATIVAR ISSO..."),
 			new FlashingLightsOption("Tira as luzes piscantes"),
 			new BotPlay("IIIIIIII AREGOU")
 		]),
@@ -54,7 +56,7 @@ class OptionsMenu extends MusicBeatState
 		
 		new OptionCategory("Optimizacao", [
 			new GfOptim("Tire a GF do game"),
-			new Antialiasingyeah("Coisa que quase ninguem percebe, mas serve pra deixar a borda mais bonita"),
+			new Personas("Tira os boneco do jogo"),
 			new Sicksresponse("Remova as mensagens de combo e sicks do game"),
 			new CenarioOptim("Remova os cenários do game"),
 			new DistractionsAndEffectsOption("Tire alguns efeitos leves do game")

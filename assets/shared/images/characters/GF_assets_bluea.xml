@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="GF_assets_bluea.png">
+	<!-- Created with Adobe Animate version 18.0.1.115 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GF Cheer0000" x="0" y="0" width="703" height="695" pivotX="149.4" pivotY="356.75"/>
+	<SubTexture name="GF Cheer0001" x="705" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0002" x="1410" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0003" x="2115" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0004" x="2820" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0005" x="3525" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0006" x="4230" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0007" x="4935" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0008" x="5640" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0009" x="5640" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0010" x="6345" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0011" x="6345" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0012" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0013" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0014" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0015" x="0" y="697" width="703" height="695"/>
+	<SubTexture name="GF Cheer0016" x="705" y="697" width="703" height="695"/>
+	<SubTexture name="GF Cheer0017" x="705" y="697" width="703" height="695"/>
+	<SubTexture name="GF Cheer0018" x="6345" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0019" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0020" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0021" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0022" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0023" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0024" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0025" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0026" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0027" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0028" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Cheer0029" x="7050" y="0" width="703" height="695"/>
+	<SubTexture name="GF Dancing Beat0000" x="1410" y="697" width="703" height="649" pivotX="149.4" pivotY="310.85"/>
+	<SubTexture name="GF Dancing Beat0001" x="2115" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0002" x="2820" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0003" x="3525" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0004" x="4230" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0005" x="4230" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0006" x="4935" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0007" x="4935" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0008" x="5640" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0009" x="5640" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0010" x="6345" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0011" x="6345" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0012" x="6345" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0013" x="7050" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0014" x="7050" y="697" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0015" x="0" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0016" x="705" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0017" x="1410" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0018" x="2115" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0019" x="2820" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0020" x="2820" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0021" x="3525" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0022" x="3525" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0023" x="4230" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0024" x="4230" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0025" x="4935" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0026" x="4935" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0027" x="5640" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0028" x="6345" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Dancing Beat0029" x="6345" y="1394" width="703" height="649"/>
+	<SubTexture name="GF Shock0000" x="7050" y="1394" width="703" height="649" pivotX="149.4" pivotY="310.85"/>
+	<SubTexture name="GF Shock0001" x="0" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0002" x="705" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0003" x="1410" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0004" x="2115" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0005" x="2820" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0006" x="3525" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0007" x="4230" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0008" x="4935" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0009" x="5640" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0010" x="6345" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0011" x="6345" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0012" x="7050" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0013" x="7050" y="2045" width="703" height="649"/>
+	<SubTexture name="GF Shock0014" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0015" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0016" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0017" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0018" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0019" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0020" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0021" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0022" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0023" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0024" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0025" x="0" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0026" x="705" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0027" x="705" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0028" x="1410" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock0029" x="1410" y="2696" width="703" height="649"/>
+	<SubTexture name="GF Shock 20000" x="2115" y="2696" width="703" height="653" pivotX="149.4" pivotY="314.3"/>
+	<SubTexture name="GF Shock 20001" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20002" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20003" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20004" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20005" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20006" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20007" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20008" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20009" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20010" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20011" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20012" x="2115" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20013" x="2820" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20014" x="2820" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20015" x="3525" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20016" x="4230" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20017" x="4935" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20018" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20019" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20020" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20021" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20022" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20023" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20024" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20025" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20026" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20027" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20028" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20029" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20030" x="6345" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20031" x="4935" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20032" x="4935" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20033" x="5640" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20034" x="7050" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20035" x="7050" y="2696" width="703" height="653"/>
+	<SubTexture name="GF Shock 20036" x="0" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20037" x="0" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20038" x="705" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20039" x="705" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20040" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20041" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20042" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20043" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20044" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20045" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20046" x="2115" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20047" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20048" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20049" x="705" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20050" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20051" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20052" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20053" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20054" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20055" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20056" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20057" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20058" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20059" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20060" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20061" x="2115" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20062" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20063" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20064" x="705" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20065" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20066" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20067" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20068" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20069" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20070" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20071" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20072" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20073" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20074" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20075" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20076" x="2115" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20077" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20078" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20079" x="705" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20080" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20081" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20082" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20083" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20084" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20085" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20086" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20087" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20088" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20089" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20090" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20091" x="2115" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20092" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20093" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20094" x="705" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20095" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20096" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20097" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20098" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20099" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20100" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20101" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20102" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20103" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20104" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20105" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20106" x="2115" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20107" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20108" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20109" x="705" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20110" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20111" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20112" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20113" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20114" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20115" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20116" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20117" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20118" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20119" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20120" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20121" x="2115" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20122" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20123" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20124" x="705" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20125" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20126" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20127" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20128" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20129" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20130" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20131" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20132" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20133" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20134" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20135" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20136" x="2115" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20137" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20138" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20139" x="705" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20140" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20141" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20142" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20143" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20144" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20145" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20146" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20147" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20148" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20149" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20150" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20151" x="2115" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20152" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20153" x="2820" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20154" x="705" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20155" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20156" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20157" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20158" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20159" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20160" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20161" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20162" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="GF Shock 20163" x="1410" y="3351" width="703" height="653"/>
+	<SubTexture name="Gf sad0000" x="3525" y="3351" width="703" height="646" pivotX="149.4" pivotY="307.75"/>
+	<SubTexture name="Gf sad0001" x="4230" y="3351" width="703" height="646"/>
+	<SubTexture name="Gf sad0002" x="4935" y="3351" width="703" height="646"/>
+	<SubTexture name="Gf sad0003" x="5640" y="3351" width="703" height="646"/>
+	<SubTexture name="Gf sad0004" x="6345" y="3351" width="703" height="646"/>
+	<SubTexture name="Gf sad0005" x="7050" y="3351" width="703" height="646"/>
+	<SubTexture name="Gf sad0006" x="0" y="4006" width="703" height="646"/>
+	<SubTexture name="Gf sad0007" x="705" y="4006" width="703" height="646"/>
+	<SubTexture name="Gf sad0008" x="0" y="4006" width="703" height="646"/>
+	<SubTexture name="Gf sad0009" x="705" y="4006" width="703" height="646"/>
+	<SubTexture name="Gf sad0010" x="0" y="4006" width="703" height="646"/>
+	<SubTexture name="Gf sad0011" x="705" y="4006" width="703" height="646"/>
+	<SubTexture name="Gf sad0012" x="0" y="4006" width="703" height="646"/>
+	<SubTexture name="Gf sad0013" x="705" y="4006" width="703" height="646"/>
+	<SubTexture name="Gf sad0014" x="0" y="4006" width="703" height="646"/>
+</TextureAtlas>

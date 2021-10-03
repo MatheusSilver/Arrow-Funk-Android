@@ -81,6 +81,8 @@ class PlayState extends MusicBeatState
 	public static var goods:Int = 0;
 	public static var sicks:Int = 0;
 
+	private static var resetSpriteCache:Bool = false;
+
 	public static var songPosBG:FlxSprite;
 	public static var songPosBar:FlxBar;
 
@@ -210,6 +212,7 @@ class PlayState extends MusicBeatState
 	private var allowedToHeadbang:Bool = false;
 	// Per song additive offset
 	public static var songOffset:Float = 0;
+
 	// BotPlay text
 	private var botPlayState:FlxText;
 	// Replay shit
@@ -226,9 +229,12 @@ class PlayState extends MusicBeatState
 	public function addObject(object:FlxBasic) { add(object); }
 	public function removeObject(object:FlxBasic) { remove(object); }
 
+	public static var trem1:Bool = true;
+
 
 	override public function create()
 	{
+
 		instance = this;
 		
 		if (FlxG.save.data.fpsCap > 290)
@@ -355,95 +361,100 @@ class PlayState extends MusicBeatState
 
 		switch(SONG.stage)
 		{
-			case 'spookyparty && FlxG.save.data.cenoptim':
+			case 'spookyparty':
 					{
-						defaultCamZoom = 0.63;
-						curStage = 'spookyparty';
+						if(FlxG.save.data.cenoptim){
 
-						var bg:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/layer0', 'shared'));
-						bg.scrollFactor.set(1, 1);
-						add(bg);
-
-						spookybglights = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/layer1', 'shared'));
-						spookybglights.scrollFactor.set(1, 1);
-					
-
-						spookers = new FlxSprite(-800, 0);
-						spookers.frames = Paths.getSparrowAtlas('spookers', 'week2');
-						spookers.animation.addByPrefix('bop', "SPEAKERS", 24, false); 
-						spookers.scrollFactor.set(1, 1);
-						add(spookers);
-						
-						
-
-
-						phillyCityLights = new FlxTypedGroup<FlxSprite>();
-						if (FlxG.save.data.distractions)
-						{
-							add(phillyCityLights);
-						}
-
-						for (i in 0...2)
-						{
-							var light:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/dancefloor' + i, 'shared'));
-							light.scrollFactor.set(1, 1);
-							light.visible = false;
-							light.updateHitbox();
-							if(FlxG.save.data.antialiasing)
-								{
-									light.antialiasing = true;
-								}
-							phillyCityLights.add(light);
-						}
-
-
-					}
-
-					case 'spookypartyEvil && FlxG.save.data.cenoptim':
-						{
 							defaultCamZoom = 0.63;
-							curStage = 'spookypartyEvil';
+							curStage = 'spookyparty';
 	
 							var bg:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/layer0', 'shared'));
 							bg.scrollFactor.set(1, 1);
 							add(bg);
-	
-							spookybglights = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/layer1virus', 'shared'));
+
+							spookybglights = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/layer1', 'shared'));
 							spookybglights.scrollFactor.set(1, 1);
-							
-							screenacid = new FlxSprite(0, 0).loadGraphic(Paths.image('baladamedo/screen', 'shared'));
-							screenacid.scrollFactor.set(0, 0);
-							screenacid.scale.set(1.6, 1.6);
+						
 
-							phillyCityLights = new FlxTypedGroup<FlxSprite>();
-						if (FlxG.save.data.distractions)
-						{
-							add(phillyCityLights);
-						}
-
-						for (i in 0...5)
-						{
-							var light:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/dancefloor' + i, 'shared'));
-							light.scrollFactor.set(1, 1);
-							light.visible = false;
-							light.updateHitbox();
-							if(FlxG.save.data.antialiasing)
-								{
-									light.antialiasing = true;
-								}
-							phillyCityLights.add(light);
-						}
-
-							spookers = new FlxSprite(-750, 0);
-							spookers.frames = Paths.getSparrowAtlas('spookers_virus', 'week2');
+							spookers = new FlxSprite(-800, 0);
+							spookers.frames = Paths.getSparrowAtlas('spookers', 'week2');
 							spookers.animation.addByPrefix('bop', "SPEAKERS", 24, false); 
 							spookers.scrollFactor.set(1, 1);
 							add(spookers);
+						
+						
+
+
+							phillyCityLights = new FlxTypedGroup<FlxSprite>();
+							if (FlxG.save.data.distractions)
+							{
+								add(phillyCityLights);
+							}
+
+							for (i in 0...2)
+							{
+								var light:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/dancefloor' + i, 'shared'));
+								light.scrollFactor.set(1, 1);
+								light.visible = false;
+								light.updateHitbox();
+								if(FlxG.save.data.antialiasing)
+									{
+										light.antialiasing = true;
+									}
+								phillyCityLights.add(light);
+							}
+						
+
+						}
+					}
+
+					case 'spookypartyEvil':
+						{
+							if(FlxG.save.data.cenoptim){
+								defaultCamZoom = 0.63;
+								curStage = 'spookypartyEvil';
+		
+								var bg:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/layer0', 'shared'));
+								bg.scrollFactor.set(1, 1);
+								add(bg);
 	
+								spookybglights = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/layer1virus', 'shared'));
+								spookybglights.scrollFactor.set(1, 1);
+								
+								screenacid = new FlxSprite(0, 0).loadGraphic(Paths.image('baladamedo/screen', 'shared'));
+								screenacid.scrollFactor.set(0, 0);
+								screenacid.scale.set(1.6, 1.6);
+
+								phillyCityLights = new FlxTypedGroup<FlxSprite>();
+								if (FlxG.save.data.distractions)
+								{
+									add(phillyCityLights);
+								}
+
+								for (i in 0...5)
+								{
+									var light:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladamedo/dancefloor' + i, 'shared'));
+									light.scrollFactor.set(1, 1);
+									light.visible = false;
+									light.updateHitbox();
+									if(FlxG.save.data.antialiasing)
+										{
+										light.antialiasing = true;
+										}
+									phillyCityLights.add(light);
+								}
+
+								spookers = new FlxSprite(-750, 0);
+								spookers.frames = Paths.getSparrowAtlas('spookers_virus', 'week2');
+								spookers.animation.addByPrefix('bop', "SPEAKERS", 24, false); 
+								spookers.scrollFactor.set(1, 1);
+								add(spookers);
+							}
 						}
 						
-			case 'stage && FlxG.save.data.cenoptim':
+			case 'stage':
 				{
+					if(FlxG.save.data.cenoptim){
 						defaultCamZoom = 0.55;
 						curStage = 'stage';
 
@@ -473,39 +484,41 @@ class PlayState extends MusicBeatState
 						bg.scrollFactor.set(0.88, 0.9);
 						bg.active = false;
 						add(bg);
+					}
 				}
-			case 'stagetutorial && FlxG.save.data.cenoptim':
+			case 'stagetutorial':
 					{
-						defaultCamZoom = 0.65;
-						curStage = 'stagetutorial';
-
-						var bg:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladadentro/layer1'));
-						if(FlxG.save.data.antialiasing)
-							{
-								bg.antialiasing = true;
-							}
-						bg.scrollFactor.set(0.92, 0.9);
-						bg.active = false;
-						add(bg);
-
-						var bg:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladadentro/layer2'));
-						if(FlxG.save.data.antialiasing)
-							{
-								bg.antialiasing = true;
-							}
-						bg.scrollFactor.set(0.9, 0.9);
-						bg.active = false;
-						add(bg);
-
-						var bg:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladadentro/layer3'));
-						if(FlxG.save.data.antialiasing)
-							{
-								bg.antialiasing = true;
-							}
-						bg.scrollFactor.set(0.88, 0.9);
-						bg.active = false;
-						add(bg);
-
+						if(FlxG.save.data.cenoptim){
+							defaultCamZoom = 0.65;
+							curStage = 'stagetutorial';
+	
+							var bg:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladadentro/layer1'));
+							if(FlxG.save.data.antialiasing)
+								{
+									bg.antialiasing = true;
+								}
+							bg.scrollFactor.set(0.92, 0.9);
+							bg.active = false;
+							add(bg);
+	
+							var bg:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladadentro/layer2'));
+							if(FlxG.save.data.antialiasing)
+								{
+									bg.antialiasing = true;
+								}
+							bg.scrollFactor.set(0.9, 0.9);
+							bg.active = false;
+							add(bg);
+	
+							var bg:FlxSprite = new FlxSprite(-850, -620).loadGraphic(Paths.image('baladadentro/layer3'));
+							if(FlxG.save.data.antialiasing)
+								{
+									bg.antialiasing = true;
+								}
+							bg.scrollFactor.set(0.88, 0.9);
+							bg.active = false;
+							add(bg);
+						}
 					}
 			default:
 			{
@@ -567,7 +580,6 @@ class PlayState extends MusicBeatState
 		gf.scrollFactor.set(0.95, 0.95);
 
 		dad = new Character(100, 100, SONG.player2);
-
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
 
 		switch (SONG.player2)
@@ -627,9 +639,8 @@ class PlayState extends MusicBeatState
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 		}
 
-
-		
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
+
 
 		// REPOSITIONING PER STAGE
 		switch (curStage)
@@ -721,9 +732,11 @@ class PlayState extends MusicBeatState
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
 			add(limo);
-
-		add(dad);
-		add(boyfriend);
+		if(FlxG.save.data.personas)
+		{
+			add(dad);
+			add(boyfriend);
+		}
 
 		if (curStage == 'spookyparty' && FlxG.save.data.cenoptim)
 		{
@@ -835,14 +848,20 @@ class PlayState extends MusicBeatState
 			healthBarBG.y = 50;
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
-		add(healthBarBG);
+		if (!FlxG.save.data.godoptimize)
+			{
+			add(healthBarBG);
+			}
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
 		healthBar.createFilledBar(0xFFFFB200, 0xFF9035FF);
 		// healthBar
-		add(healthBar);
+		if (FlxG.save.data.godoptimize)
+			{
+			add(healthBar);
+			}
 
 		// Add Kade Engine watermark
 		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (""), 16);
@@ -879,11 +898,17 @@ class PlayState extends MusicBeatState
 
 		iconP1 = new HealthIcon(SONG.player1, true);
 		iconP1.y = healthBar.y - (iconP1.height / 2);
-		add(iconP1);
+		if (!FlxG.save.data.godoptimize)
+			{
+			add(iconP1);
+			}
 
 		iconP2 = new HealthIcon(SONG.player2, false);
 		iconP2.y = healthBar.y - (iconP2.height / 2);
-		add(iconP2);
+		if (!FlxG.save.data.godoptimize)
+			{
+			add(iconP2);
+			}
 
 		strumLineNotes.cameras = [camHUD];
 		notes.cameras = [camHUD];
@@ -2150,6 +2175,22 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		if (FlxG.save.data.godoptimize)
+			{
+				//sussy gambiarra ahead
+
+				if (misses >= 10){
+				boyfriend.stunned = true;
+				persistentUpdate = false;
+				persistentDraw = false;
+				paused = true;
+				vocals.stop();
+				FlxG.sound.music.stop();
+				openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
+				}
+			}
+
+
 
 		if (health <= 0)
 		{
@@ -2559,13 +2600,13 @@ class PlayState extends MusicBeatState
 
 					PlayState.SONG = Song.loadFromJson(nextSongLowercase + difficulty, PlayState.storyPlaylist[0]);
 					FlxG.sound.music.stop();
-
 					LoadingState.loadAndSwitchState(new PlayState());
 				}
 			}
 			else
 			{
 				trace('WENT BACK TO FREEPLAY??');
+
 				FlxG.switchState(new FreeplayState());
 			}
 		}
@@ -3272,6 +3313,13 @@ class PlayState extends MusicBeatState
 				{
 					if (!note.isSustainNote)
 					{
+
+						if (FlxG.save.data.osus)
+						{
+							var hitsound:FlxSound = new FlxSound().loadEmbedded(Paths.sound('osu', 'shared'));
+							hitsound.volume = 0.3;
+							hitsound.play();
+						}
 						popUpScore(note);
 						combo += 1;
 					}
@@ -3433,6 +3481,13 @@ class PlayState extends MusicBeatState
 
 	var danced:Bool = false;
 
+	public function cancelFadeTween() {
+		if(FlxG.sound.music.fadeTween != null) {
+			FlxG.sound.music.fadeTween.cancel();
+		}
+		FlxG.sound.music.fadeTween = null;
+	}
+
 	override function stepHit()
 	{
 		super.stepHit();
@@ -3485,36 +3540,15 @@ class PlayState extends MusicBeatState
 		{
 		//hey
 
-		//mensagem para a nashira: Eu coloquei isso de volta pois achei : D
-
-					if (curStep == 128)
+		//Eu coloquei isso de volta pois achei : D (e modifiquei tambem...)
+					if (curStep == 192)
 						{
 						boyfriend.playAnim('hey', true);
 						}	
-					if (curStep == 256)
+					if (curStep == 321)
 						{
 						boyfriend.playAnim('hey', true);
 						}	
-					if (curStep == 324)
-						{
-						boyfriend.playAnim('hey', true);
-						}
-					if (curStep == 388)
-						{
-						boyfriend.playAnim('hey', true);
-						}
-					if (curStep == 512)
-						{
-						boyfriend.playAnim('hey', true);
-						}
-					if (curStep == 640)
-						{
-						boyfriend.playAnim('hey', true);
-						}
-					if (curStep == 772)
-						{
-						boyfriend.playAnim('hey', true);
-						}
 					if (curStep == 896)
 						{
 						boyfriend.playAnim('hey', true);
@@ -4041,30 +4075,33 @@ class PlayState extends MusicBeatState
 		{	
 
 		//IT'S GAMBIARRA TIMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE spookykids
-
-			if (curStep == 40)
+			
+			if(FlxG.save.data.personas)
 			{
-				remove(dad);
-				dad = new Character(-80, 140, 'spookykids-happy');
-				add(dad);
-			}
+				if (curStep == 40)
+				{
+					remove(dad);
+					dad = new Character(-80, 140, 'spookykids-happy');
+					add(dad);
+				}
 
-			if (curStep == 120)
-			{
-				remove(dad);
-				dad = new Character(-80, 140, 'spookykids');
-				add(dad);
-			}
+				if (curStep == 120)
+				{
+					remove(dad);
+					dad = new Character(-80, 140, 'spookykids');
+					add(dad);
+				}
 
 		//"O importante não é ficar bonito, o importante é funcionar, e tambem que ninguem perceba..." Gambiarras, Silver, 2021 : D
 
-			if (curStep == 2176)
-			{
-				remove(dad);
-				dad = new Character(-80, 140, 'spookykids-happy');
-				add(dad);
+				if (curStep == 2176)
+				{
+					remove(dad);
+					dad = new Character(-80, 140, 'spookykids-happy');
+					add(dad);
+				}
 			}
-			
+		//ACHOU QUE EU IA ESQUECER CLARA TUA VAGARANHA!!
 
 		}
 		else if (curSong == 'Virus') 

@@ -6,7 +6,20 @@ class KadeEngineData
     public static function initSave()
     {
         if (FlxG.save.data.newInput == null)
-			FlxG.save.data.newInput = true;
+			FlxG.save.data.newInput = true; 
+
+        if (FlxG.save.data.godoptimize == null)
+			FlxG.save.data.godoptimize = false;
+
+        if (FlxG.save.data.middle == null)
+			FlxG.save.data.middle = false;
+		
+
+        if (FlxG.save.data.osus == null)
+			FlxG.save.data.osus = false;
+
+        if (FlxG.save.data.otimizacaoforcada == null)
+			FlxG.save.data.otimizacaoforcada = true;
 
 		if (FlxG.save.data.downscroll == null)
 			FlxG.save.data.downscroll = false;
@@ -22,6 +35,9 @@ class KadeEngineData
 
 		if (FlxG.save.data.songPosition == null)
 			FlxG.save.data.songPosition = false;
+
+		if (FlxG.save.data.personas == null)
+			FlxG.save.data.personas = true;
 
 		if (FlxG.save.data.fps == null)
 			FlxG.save.data.fps = false;
@@ -40,10 +56,10 @@ class KadeEngineData
 			FlxG.save.data.fpsRain = false;
 
 		if (FlxG.save.data.fpsCap == null)
-			FlxG.save.data.fpsCap = 120;
+			FlxG.save.data.fpsCap = 60;
 
 		if (FlxG.save.data.fpsCap > 285 || FlxG.save.data.fpsCap < 60)
-			FlxG.save.data.fpsCap = 120; // baby proof so you can't hard lock ur copy of kade engine
+			FlxG.save.data.fpsCap = 60; // baby proof so you can't hard lock ur copy of kade engine
 		
 		if (FlxG.save.data.scrollSpeed == null)
 			FlxG.save.data.scrollSpeed = 1;
@@ -81,16 +97,13 @@ class KadeEngineData
 		if (FlxG.save.data.strumline == null)
 			FlxG.save.data.strumline = false;
 
-		if (FlxG.save.data.antialiasing == null)
-			FlxG.save.data.antialiasing = true;
-
 		if (FlxG.save.data.cpuStrums == null)
 			FlxG.save.data.cpuStrums = false;
 
-		if (FlxG.save.data.strumline == null)
+		if (FlxG.save.data.cenoptim == null)
 			FlxG.save.data.cenoptim = true;
 		
-		if (FlxG.save.data.customStrumLine == null)
+		if (FlxG.save.data.gfoptim == null)
 			FlxG.save.data.gfoptim = true;
 
 		Conductor.recalculateTimings();

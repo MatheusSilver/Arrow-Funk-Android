@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Arrow Funk" file="Arrows" packageName="com.teamsilver.arrows" package="com.teamsilver.arrows" main="Main" version="0.2.7.1" company="teamsilver" />
+	<app title="Arrow Funk" file="Arrow" packageName="com.teamsilver.arrow" package="com.teamsilver.arrow" main="Main" version="0.2.7.1" company="teamsilver" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -30,6 +30,7 @@
 	<window if="mobile" orientation="landscape" fullscreen="true" width="1280" height="720" resizable="false"/>
 	<define name="mobileC" if="mobile" />
 	<assets path="assets/shared/images/hitbox"/>
+	<define name="MODS_ALLOWED" unless="web" />
 
 	<!--Switch-specific-->
 	<window if="switch" orientation="landscape" fullscreen="true" width="0" height="0" resizable="true" />
@@ -92,7 +93,7 @@
 	<assets path="assets/week6"    library="week6"    exclude="*.ogg" if="web"/>
 	<assets path="assets/week6"    library="week6"    exclude="*.mp3" unless="web"/>
 	
-	<assets path='example_mods' rename='mods' embed='false'/>
+	<assets path='example_mods' rename='mods' embed='false' if="MODS_ALLOWED"/>
 	<assets path='art/readme.txt' rename='do NOT readme.txt' />
 	<assets path='LICENSE' rename='LICENSE.txt' />
 	<!-- <template path='mods' /> -->

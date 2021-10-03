@@ -37,6 +37,7 @@ class FreeplayState extends MusicBeatState
 
 	override function create()
 	{
+
 		var initSonglist = CoolUtil.coolTextFile(Paths.txt('freeplaySonglist'));
 
 		for (i in 0...initSonglist.length)
@@ -44,14 +45,6 @@ class FreeplayState extends MusicBeatState
 			var data:Array<String> = initSonglist[i].split(':');
 			songs.push(new SongMetadata(data[0], Std.parseInt(data[2]), data[1]));
 		}
-
-		/* 
-			if (FlxG.sound.music != null)
-			{
-				if (!FlxG.sound.music.playing)
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
-			}
-		 */
 
 		 #if windows
 		 // Updating Discord Rich Presence
@@ -234,7 +227,13 @@ class FreeplayState extends MusicBeatState
 			PlayState.storyDifficulty = curDifficulty;
 			PlayState.storyWeek = songs[curSelected].week;
 			trace('CUR WEEK' + PlayState.storyWeek);
-			LoadingState.loadAndSwitchState(new PlayState());
+			if(!FlxG.save.data.godoptimize){
+				LoadingState.loadAndSwitchState(new PlayState(), true);
+			}
+			if(FlxG.save.data.godoptimize){
+				FlxG.switchState(new ModoBraboWarn(true, 'soundtest')); //Isso obviamente não é do meu port do Sonic.APK
+			}
+					
 		}
 	}
 
@@ -298,9 +297,12 @@ class FreeplayState extends MusicBeatState
 		// lerpScore = 0;
 		#end
 
-		#if PRELOAD_ALL
-		FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
-		#end
+		if (!FlxG.sound.music.playing)
+			{
+				FlxG.sound.playMusic(Paths.music('freakyMenu'));
+			}
+
+			//AHA QUERO VER OS MANOS CRASHAREM MEU PORT AGORA! AQUELES PILANTRAS!!!
 
 		var bullShit:Int = 0;
 

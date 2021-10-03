@@ -256,6 +256,26 @@ class DistractionsAndEffectsOption extends Option
 	}
 }
 
+class Osukengo extends Option
+{
+	public function new(desc:String)
+	{
+		super();
+		description = desc;
+	}
+	public override function press():Bool
+	{
+		FlxG.save.data.osus = !FlxG.save.data.osus;
+		display = updateDisplay();
+		return true;
+	}
+
+	private override function updateDisplay():String
+	{
+		return "OSU " + (!FlxG.save.data.osus ? "nao" : "sim");
+	}
+}
+
 class ResetButtonOption extends Option
 {
 	public function new(desc:String)
@@ -518,6 +538,28 @@ class GfOptim extends Option
 	}
 }
 
+class Ultimaopcaoprometo extends Option //Confia :sunglasses: (emoji em código, sodasse)
+{
+	public function new(desc:String)
+	{
+		super();
+		description = desc;
+	}
+
+	public override function press():Bool
+	{
+		FlxG.save.data.godoptimize = !FlxG.save.data.godoptimize;
+		(cast (Lib.current.getChildAt(0), Main)).changeFPSColor(FlxColor.WHITE);
+		display = updateDisplay();
+		return true;
+	}
+
+	private override function updateDisplay():String
+	{
+		return "Modo Insano " + (!FlxG.save.data.godoptimize ? "Desativado" : "Ativado");
+	}
+}
+
 class Sicksresponse extends Option
 {
 	public function new(desc:String)
@@ -540,7 +582,7 @@ class Sicksresponse extends Option
 	}
 }
 
-class Antialiasingyeah extends Option
+class Personas extends Option
 {
 	public function new(desc:String)
 	{
@@ -550,7 +592,7 @@ class Antialiasingyeah extends Option
 
 	public override function press():Bool
 	{
-		FlxG.save.data.antialiasing = !FlxG.save.data.antialiasing;
+		FlxG.save.data.personas = !FlxG.save.data.personas;
 		(cast (Lib.current.getChildAt(0), Main)).changeFPSColor(FlxColor.WHITE);
 		display = updateDisplay();
 		return true;
@@ -558,7 +600,7 @@ class Antialiasingyeah extends Option
 
 	private override function updateDisplay():String
 	{
-		return "serrilhado " + (!FlxG.save.data.antialiasing ? "desligado" : "ligado");
+		return "" + (!FlxG.save.data.personas ? "Sem personagens" : "Com personagens");
 	}
 }
 
