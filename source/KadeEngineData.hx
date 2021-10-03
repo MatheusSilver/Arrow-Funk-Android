@@ -11,6 +11,9 @@ class KadeEngineData
         if (FlxG.save.data.godoptimize == null)
 			FlxG.save.data.godoptimize = false;
 
+        if (FlxG.save.data.menuzin == null)
+			FlxG.save.data.menuzin = true;
+
         if (FlxG.save.data.middle == null)
 			FlxG.save.data.middle = false;
 		

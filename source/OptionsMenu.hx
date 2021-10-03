@@ -28,16 +28,12 @@ class OptionsMenu extends MusicBeatState
 			new DFJKOption(controls),
 			new DownscrollOption("Para o Nexxy e Marcelo e Max Extremo e as crias deles"),
 			new GhostTapOption("Seja punido, ou não, por apertar errado"),
-			new Ultimaopcaoprometo("He is Back!"),
-			new Judgement("Customize seu tempo de resposta (Esquerda e direita), espero que isso funcione"),
-			new FPSCapOption("Muda o limite de FPS do jooj"),
-			new ScrollSpeedOption("Muda a velocidade do scroll (1 = Padrão)"),
+			new Ultimaopcaoprometo("He is Back! o modo que faz junimKK chorar até hoje"),
 			new AccuracyDOption("Muda como a precisão é calculada. (Precisa = Simples, Complexa = baseada em milisegundos)")
 		]),
 		new OptionCategory("Aparencia", [
 			new RainbowFPSOption("Deixa o FPS bem gay"),
 			new AccuracyOption("Mostra informações sobre a precisão"),
-			new NPSDisplayOption("Mostra a quantidade de notas naquele segundo"),
 			new SongPositionOption("Mostra sua posição na musica (como uma barra)"),
 			new CpuStrums("SIM SIM, FAZ BRILIN!"),
 		]),
@@ -46,7 +42,7 @@ class OptionsMenu extends MusicBeatState
 			new FPSOption("Mosra ou não o FPS"),
 			new Osukengo("Ok... Só falta querer jogar osu... Não... Espera, NEM PENSE EM ATIVAR ISSO..."),
 			new FlashingLightsOption("Tira as luzes piscantes"),
-			new BotPlay("IIIIIIII AREGOU")
+			new BotPlay("IIIIIIII AREGOU (tente passar da week 2 com isso kkkkkk)")
 		]),
 
 		new OptionCategory("Config mobile", [
@@ -57,6 +53,7 @@ class OptionsMenu extends MusicBeatState
 		new OptionCategory("Optimizacao", [
 			new GfOptim("Tire a GF do game"),
 			new Personas("Tira os boneco do jogo"),
+			new Opcaoisendless("Remove os fundos dos menus do jooj"),
 			new Sicksresponse("Remova as mensagens de combo e sicks do game"),
 			new CenarioOptim("Remova os cenários do game"),
 			new DistractionsAndEffectsOption("Tire alguns efeitos leves do game")
@@ -74,6 +71,8 @@ class OptionsMenu extends MusicBeatState
 	override function create()
 	{
 		instance = this;
+
+		if(FlxG.save.data.menuzin){
 		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image("menuDesat"));
 
 		menuBG.color = 0xFFea71fd;
@@ -82,6 +81,8 @@ class OptionsMenu extends MusicBeatState
 		menuBG.screenCenter();
 		menuBG.antialiasing = true;
 		add(menuBG);
+
+		}
 
 		grpControls = new FlxTypedGroup<Alphabet>();
 		add(grpControls);

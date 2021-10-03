@@ -556,7 +556,29 @@ class Ultimaopcaoprometo extends Option //Confia :sunglasses: (emoji em código,
 
 	private override function updateDisplay():String
 	{
-		return "Modo Insano " + (!FlxG.save.data.godoptimize ? "Desativado" : "Ativado");
+		return "Modo Brabo " + (!FlxG.save.data.godoptimize ? "Desativado" : "Ativado");
+	}
+}
+
+class Opcaoisendless extends Option //Confia agora!!! :sunglasses: (emoji em código, sodasse)
+{
+	public function new(desc:String)
+	{
+		super();
+		description = desc;
+	}
+
+	public override function press():Bool
+	{
+		FlxG.save.data.menuzin = !FlxG.save.data.menuzin;
+		(cast (Lib.current.getChildAt(0), Main)).changeFPSColor(FlxColor.WHITE);
+		display = updateDisplay();
+		return true;
+	}
+
+	private override function updateDisplay():String
+	{
+		return "" + (!FlxG.save.data.menuzin ? "Sem menus" : "Com menus"); //Satisfeito Wayyz?
 	}
 }
 

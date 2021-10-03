@@ -574,6 +574,11 @@ class PlayState extends MusicBeatState
 				gfVersion = 'gf-pixel';
 			default:
 				gfVersion = 'gf';
+			
+			//Sorry Lone, I Stole Your code!!! isto foi nescessário por fins de: PREGUIÇA.
+			if(FlxG.save.data.gfoptim){
+				gfVersion = 'invisibru-gf';
+			}
 		}
 
 		gf = new Character(400, 130, gfVersion);
@@ -732,7 +737,7 @@ class PlayState extends MusicBeatState
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
 			add(limo);
-		if(FlxG.save.data.personas)
+		if(FlxG.save.data.personas) //Isso não funciona BTW, mas tá ai...
 		{
 			add(dad);
 			add(boyfriend);
@@ -858,7 +863,7 @@ class PlayState extends MusicBeatState
 		healthBar.scrollFactor.set();
 		healthBar.createFilledBar(0xFFFFB200, 0xFF9035FF);
 		// healthBar
-		if (FlxG.save.data.godoptimize)
+		if (!FlxG.save.data.godoptimize)
 			{
 			add(healthBar);
 			}
@@ -4377,7 +4382,7 @@ class PlayState extends MusicBeatState
 					{
 						
 	
-						if (!trainMoving)
+						if (!trainMoving) //SUSSY, mas esperto... MAS TÁ SUSSY
 							trainCooldown += 1;
 	
 						if (curBeat % 4 == 0)
