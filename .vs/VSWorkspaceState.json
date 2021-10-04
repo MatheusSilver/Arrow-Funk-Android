@@ -2,9 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\assets\\preload\\images",
     "\\assets\\shared",
+    "\\assets\\shared\\images",
+    "\\assets\\shared\\images\\characters",
     "\\source"
   ],
-  "SelectedNode": "\\source\\CoolUtil.hx",
+  "SelectedNode": "\\source\\ModoBraboWarn.hx",
   "PreviewInSolutionExplorer": false
 }

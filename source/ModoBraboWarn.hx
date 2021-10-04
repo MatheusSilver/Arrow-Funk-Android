@@ -20,7 +20,7 @@ class ModoBraboWarn extends MusicBeatState
             if (isUnlocked)
             {
                 image = new FlxSprite().loadGraphic(Paths.image('trem'));
-                FlxG.save.data.soundTestUnlocked = true;
+                FlxG.save.data.ghost = false;
             }
         }
         super();
@@ -48,7 +48,6 @@ class ModoBraboWarn extends MusicBeatState
     {
         if (controls.ACCEPT)
         {
-            FlxG.save.data.newInput = true;
             FlxG.sound.play(Paths.sound('confirmMenu'));
 			LoadingState.loadAndSwitchState(new PlayState(), true);
         }

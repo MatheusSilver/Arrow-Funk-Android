@@ -582,6 +582,12 @@ class PlayState extends MusicBeatState
 		dad = new Character(100, 100, SONG.player2);
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
 
+		if (dad.curCharacter == 'spookykids'){
+			var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, 100);
+			}
+
+			//Sussy gambiarra
+
 		switch (SONG.player2)
 		{
 			case 'gf':
@@ -594,9 +600,9 @@ class PlayState extends MusicBeatState
 				}
 
 			case "spookykids":
-				camPos.y -= 400;
+				camPos.y -= 1000;
 				camPos.x += 300;
-				dad.y += 100;
+				dad.y -=0;
 			case "spookykids-happy":
 				camPos.y -= 400;
 				camPos.x += 300;
@@ -654,17 +660,19 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stage':
-					boyfriend.y += 50;
+
+					boyfriend.x += 175;
+					boyfriend.y += 140;
 					dad.y -= 10;
-					dad.x -= 150;
-					gf.y += 60;
-					gf.x -= 175;
+					dad.x -= 300;
+					gf.y += 90;
+					gf.x -= 75;
 					gf.scrollFactor.set(0.9, 0.9);
 					boyfriend.scrollFactor.set(0.9, 0.9);
 					dad.scrollFactor.set(0.9, 0.9);
 					if (dad.curCharacter == 'dad-fire')
 					{
-						dad.x -= 200;
+						dad.x += 30;
 						dad.y += 200;					
 					
 					}
@@ -677,14 +685,14 @@ class PlayState extends MusicBeatState
 					}
 
 			case 'stagetutorial':
-					boyfriend.y -= 10;
-					dad.y += 50;
+					boyfriend.y += 70;
+					dad.x += 50;
 					dad.y -= 25;
 					gf.y -= 9000; //Tacando a GF lá na ponte que partiu...
 					gf.x -= 175;
 					if (dad.curCharacter == 'dad-fire')
 					{
-						dad.x -= 50;
+						dad.x += 30;
 						dad.y += 200;					
 					
 					} //Por segurança...
@@ -693,9 +701,15 @@ class PlayState extends MusicBeatState
 					dad.scrollFactor.set(0.9, 0.9);
 
 			case 'spookyparty':
-				boyfriend.y += 10;
+				boyfriend.y += 100;
 				boyfriend.x += 35;
-				dad.y -= 60;
+				if (dad.curCharacter == 'spookykids')
+					{
+					dad.x += 150;
+					dad.y += 450;					
+					
+					} //Por segurança...
+				dad.y -= 40;
 				dad.x -= 180;
 				gf.x -= 168;
 				gf.y += 10;
@@ -4099,26 +4113,10 @@ class PlayState extends MusicBeatState
 			
 			if(FlxG.save.data.personas)
 			{
-				if (curStep == 40)
-				{
-					remove(dad);
-					dad = new Character(-80, 140, 'spookykids-happy');
-					add(dad);
-				}
-
-				if (curStep == 120)
-				{
-					remove(dad);
-					dad = new Character(-80, 140, 'spookykids');
-					add(dad);
-				}
-
-		//"O importante não é ficar bonito, o importante é funcionar, e tambem que ninguem perceba..." Gambiarras, Silver, 2021 : D
-
 				if (curStep == 2176)
 				{
 					remove(dad);
-					dad = new Character(-80, 140, 'spookykids-happy');
+					dad = new Character(-80, 140, 'spookykids-happy'); //Por favor não dê lag ou ficarei triste
 					add(dad);
 				}
 			}
