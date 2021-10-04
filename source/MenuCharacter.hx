@@ -22,11 +22,11 @@ class CharacterSetting
 class MenuCharacter extends FlxSprite
 {
 	private static var settings:Map<String, CharacterSetting> = [
-		'bf' => new CharacterSetting(-225, -55, 0.32, true),
-		'gf' => new CharacterSetting(570, 160, 1.1, true),
-		'dad' => new CharacterSetting(-80, 220, 0.7),
-		'spookykids' => new CharacterSetting(0, 150, 0.75),
-		'kevin' => new CharacterSetting(-174, 132, 1.39),
+		'bf' => new CharacterSetting(-400, 0, 0.64, true),
+		'gf' => new CharacterSetting(395, 0, 2.2, true),
+		'dad' => new CharacterSetting(-255, 0, 1.4),
+		'spookykids' => new CharacterSetting(-175, 20, 1.5),
+		'kevin' => new CharacterSetting(-350, 0, 2.78),
 		'pico' => new CharacterSetting(0, 0, 1.0, true),
 		'mom' => new CharacterSetting(-30, 140, 0.85),
 		'parents-christmas' => new CharacterSetting(100, 130, 1.8),
@@ -56,6 +56,7 @@ class MenuCharacter extends FlxSprite
 		animation.addByPrefix('senpai', "SENPAI idle Black Lines", 24);
 
 		setGraphicSize(Std.int(width * scale));
+
 		updateHitbox();
 	}
 

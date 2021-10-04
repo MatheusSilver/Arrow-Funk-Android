@@ -62,38 +62,6 @@ class Character extends FlxSprite
 
 						playAnim('danceRight');
 
-						case 'invisibru-gf':
-							// Sussy Solution... "O que eu to fazendo da mia vida meu Deus..."
-							tex = Paths.getSparrowAtlas('characters/GFa_assets');
-							frames = tex;
-							animation.addByPrefix('cheer', 'GF Cheer', 24, false);
-							animation.addByPrefix('singLEFT', 'GF left note', 24, false);
-							animation.addByPrefix('singRIGHT', 'GF Right Note', 24, false);
-							animation.addByPrefix('singUP', 'GF Up Note', 24, false);
-							animation.addByPrefix('singDOWN', 'GF Down Note', 24, false);
-							animation.addByIndices('sad', 'gf sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
-							animation.addByIndices('danceLeft', 'GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-							animation.addByIndices('danceRight', 'GF Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-							animation.addByIndices('hairBlow', "GF Dancing Beat Hair blowing", [0, 1, 2, 3], "", 24);
-							animation.addByIndices('hairFall', "GF Dancing Beat Hair Landing", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "", 24, false);
-							animation.addByPrefix('scared', 'GF FEAR', 24);
-	
-	
-							addOffset('sad', 0, -12);
-							addOffset('danceLeft', 0, -9);
-							addOffset('danceRight', 0, -9);
-	
-							addOffset("singUP", 0, 4);
-							addOffset("singRIGHT", 0, -20);
-							addOffset("singLEFT", 0, -19);
-							addOffset("singDOWN", 0, -20);
-							addOffset('hairBlow', 45, -8);
-							addOffset('hairFall', 0, -9);
-	
-							addOffset('scared', -2, -17);
-	
-							playAnim('danceRight');
-
 					case 'gf-blue':
 						// GIRLFRIEND BLUE 
 						tex = Paths.getSparrowAtlas('characters/GF_assets_blue');
@@ -109,6 +77,8 @@ class Character extends FlxSprite
 						animation.addByIndices('hairBlow', "GF Dancing Beat Hair blowing", [0, 1, 2, 3], "", 24);
 						animation.addByIndices('hairFall', "GF Dancing Beat Hair Landing", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "", 24, false);
 						animation.addByPrefix('scared', 'GF FEAR', 24);
+
+						setGraphicSize(Std.int(width * 2));
 
 						animation.addByPrefix('shock', 'GF Shock', 24);
 
@@ -184,6 +154,8 @@ class Character extends FlxSprite
 						animation.addByIndices('hairFall', "GF Dancing Beat Hair Landing", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "", 24, false);
 						animation.addByPrefix('scared', 'GF FEAR', 24);
 
+						setGraphicSize(Std.int(width * 2));
+
 						addOffset('cheer', 0, 38);
 
 
@@ -215,6 +187,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singUP', 'GF Up Note', 24, false);
 				animation.addByPrefix('singDOWN', 'GF Down Note', 24, false);
 				animation.addByPrefix('scared', 'GF FEAR', 24);
+
+				setGraphicSize(Std.int(width * 2));
 
 				animation.addByPrefix('cheer', 'GF Cheer', 24, false);
 
@@ -255,6 +229,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
 				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
 
+				setGraphicSize(Std.int(width * 2));
+
 				animation.addByPrefix('throwmic', 'Dad mic throw', 24);
 
 				animation.addByPrefix('micend', 'Dad end animation', 24);
@@ -279,6 +255,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'spooky left', 24, false);
 				animation.addByPrefix('singRIGHT', 'spooky right', 24, false);
 				animation.addByPrefix('idle', 'spooky dance idle', 24);
+
+				setGraphicSize(Std.int(width * 2));
 
 				animation.addByPrefix('hey', 'spooky hey', 24);
 
@@ -322,6 +300,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHT', 'spooky right', 24, false);
 				animation.addByPrefix('idle', 'spooky dance idle', 24);
 
+				setGraphicSize(Std.int(width * 2));
+
 
 				animation.addByPrefix('scared', 'spooky scary', 24); //skeletons
 
@@ -350,6 +330,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
 				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
 				animation.addByPrefix('hey', 'BF HEY', 24, false);
+
+				setGraphicSize(Std.int(width * 2));
 
 				animation.addByPrefix('firstDeath', "BF dies", 24, false);
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
@@ -392,6 +374,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
 				animation.addByPrefix('hey', 'BF HEY', 24, false);
 
+				setGraphicSize(Std.int(width * 2));
+
 				animation.addByPrefix('firstDeath', "BF dies", 24, false);
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
 				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
@@ -432,6 +416,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
 				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
 				animation.addByPrefix('hey', 'BF HEY', 24, false);
+
+				setGraphicSize(Std.int(width * 2));
 
 				animation.addByPrefix('firstDeath', "BF dies", 24, false);
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);

@@ -53,7 +53,6 @@ class OptionsMenu extends MusicBeatState
 		new OptionCategory("Optimizacao", [
 			new GfOptim("Tire a GF do game"),
 			new Personas("Tira os boneco do jogo"),
-			new Opcaoisendless("Remove os fundos dos menus do jooj"),
 			new Sicksresponse("Remova as mensagens de combo e sicks do game"),
 			new CenarioOptim("Remova os cenários do game"),
 			new DistractionsAndEffectsOption("Tire alguns efeitos leves do game")
@@ -71,8 +70,7 @@ class OptionsMenu extends MusicBeatState
 	override function create()
 	{
 		instance = this;
-
-		if(FlxG.save.data.menuzin){
+		
 		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image("menuDesat"));
 
 		menuBG.color = 0xFFea71fd;
@@ -81,8 +79,6 @@ class OptionsMenu extends MusicBeatState
 		menuBG.screenCenter();
 		menuBG.antialiasing = true;
 		add(menuBG);
-
-		}
 
 		grpControls = new FlxTypedGroup<Alphabet>();
 		add(grpControls);

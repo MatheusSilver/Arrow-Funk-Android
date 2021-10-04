@@ -573,12 +573,7 @@ class PlayState extends MusicBeatState
 			case 'gf-pixel':
 				gfVersion = 'gf-pixel';
 			default:
-				gfVersion = 'gf';
-			
-			//Sorry Lone, I Stole Your code!!! isto foi nescessário por fins de: PREGUIÇA.
-			if(FlxG.save.data.gfoptim){
-				gfVersion = 'invisibru-gf';
-			}
+				gfVersion = 'gf'; //Testando coisas...
 		}
 
 		gf = new Character(400, 130, gfVersion);
@@ -651,7 +646,7 @@ class PlayState extends MusicBeatState
 		switch (curStage)
 		{
 			case 'limo':
-				boyfriend.y -= 220;
+				boyfriend.y -= 170;
 				boyfriend.x += 260;
 				if(FlxG.save.data.distractions){
 					resetFastCar();
@@ -659,18 +654,25 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'stage':
-					boyfriend.y -= 10;
+					boyfriend.y += 50;
 					dad.y -= 10;
 					dad.x -= 150;
-					gf.y -= 10;
+					gf.y += 60;
 					gf.x -= 175;
 					gf.scrollFactor.set(0.9, 0.9);
 					boyfriend.scrollFactor.set(0.9, 0.9);
 					dad.scrollFactor.set(0.9, 0.9);
+					if (dad.curCharacter == 'dad-fire')
+					{
+						dad.x -= 200;
+						dad.y += 200;					
+					
+					}
 					if (dad.curCharacter == 'kevin')
 					{
 
-						dad.x -= 200;
+						dad.x -= 50;
+						dad.y += 130;
 					
 					}
 
@@ -678,29 +680,35 @@ class PlayState extends MusicBeatState
 					boyfriend.y -= 10;
 					dad.y += 50;
 					dad.y -= 25;
-					gf.y -= 9000;
+					gf.y -= 9000; //Tacando a GF lá na ponte que partiu...
 					gf.x -= 175;
+					if (dad.curCharacter == 'dad-fire')
+					{
+						dad.x -= 50;
+						dad.y += 200;					
+					
+					} //Por segurança...
 					gf.scrollFactor.set(0.9, 0.9);
 					boyfriend.scrollFactor.set(0.9, 0.9);
 					dad.scrollFactor.set(0.9, 0.9);
 
 			case 'spookyparty':
-				boyfriend.y -= 60;
+				boyfriend.y += 10;
 				boyfriend.x += 35;
 				dad.y -= 60;
 				dad.x -= 180;
 				gf.x -= 168;
-				gf.y -= 84;
+				gf.y += 10;
 				
 				gf.scrollFactor.set(1, 1);
 
 			case 'spookypartyEvil':
-				boyfriend.y -= 60;
+				boyfriend.y += 10;
 				boyfriend.x += 35;
-				dad.y -= 60;
-				dad.x -= 180;
-				gf.x -= 400;
-				gf.y -= 170;
+				dad.y += 60;
+				dad.x += 50;
+				gf.x -= 0;
+				gf.y +10;
 
 				gf.scrollFactor.set(1, 1);
 
@@ -869,7 +877,7 @@ class PlayState extends MusicBeatState
 			}
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + (""), 16);
+		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Dificil" : storyDifficulty == 1 ? "Normal" : "Easy") + (""), 16);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
@@ -2180,9 +2188,14 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+
+
 		if (FlxG.save.data.godoptimize)
 			{
 				//sussy gambiarra ahead
+
+				if (misses >= 5)
+					scoreTxt.color = FlxColor.RED;
 
 				if (misses >= 10){
 				boyfriend.stunned = true;
@@ -2697,7 +2710,10 @@ class PlayState extends MusicBeatState
 						if (daNote.noteType == 1 || daNote.noteType == 0)
 							{
 								daRating = 'good';
-								score = 200;
+								if (!FlxG.save.data.godoptimize)
+									score = 200;
+								if (FlxG.save.data.godoptimize)
+									score = 4000;
 								ss = false;
 								goods++;
 								if (health < 2)
@@ -2750,8 +2766,8 @@ class PlayState extends MusicBeatState
 	
 			rating.loadGraphic(Paths.image(pixelShitPart1 + daRating + pixelShitPart2));
 			rating.screenCenter();
-			rating.y -= 50;
-			rating.x = coolText.x - 125;
+			rating.y -= -235;
+			rating.x = 65;
 			
 			if (FlxG.save.data.changedHit)
 			{

@@ -12,7 +12,7 @@ class KadeEngineData
 			FlxG.save.data.godoptimize = false;
 
         if (FlxG.save.data.menuzin == null)
-			FlxG.save.data.menuzin = true;
+			FlxG.save.data.menuzin = false;
 
         if (FlxG.save.data.middle == null)
 			FlxG.save.data.middle = false;

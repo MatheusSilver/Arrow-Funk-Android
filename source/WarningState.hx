@@ -7,7 +7,7 @@ import ui.FlxVirtualPad;
 
 /**
  * ...
- * @author ...
+ * @author Silvio
  */
 class WarningState extends FlxState
 {
@@ -28,11 +28,15 @@ class WarningState extends FlxState
 		add(warning);
 	}
 	public override function update(elapsed){
+
+		if(FlxG.save.data.menuzin){FlxG.switchState(new TitleState());}
 		
 		for (touch in FlxG.touches.list)
 		{
 			if (touch.justPressed)
+				FlxG.sound.play(Paths.sound('confirmMenu'));
 				FlxG.save.data.flashing = true;
+				FlxG.save.data.menuzin = false;
 				FlxG.switchState(new TitleState());
 			}
 

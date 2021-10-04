@@ -38,7 +38,7 @@ class ModoBraboWarn extends MusicBeatState
         });
         
 		#if mobileC
-		addVirtualPad(NONE, A);
+		addVirtualPad(NONE, A_B);
 		#end
 
         super.create();
@@ -48,8 +48,15 @@ class ModoBraboWarn extends MusicBeatState
     {
         if (controls.ACCEPT)
         {
+            FlxG.save.data.newInput = true;
+            FlxG.sound.play(Paths.sound('confirmMenu'));
 			LoadingState.loadAndSwitchState(new PlayState(), true);
         }
+
+        if (controls.BACK)
+            {
+                LoadingState.loadAndSwitchState(new MainMenuState(), true);
+            }
         
         super.update(elapsed);
     }
