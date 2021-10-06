@@ -593,11 +593,6 @@ class PlayState extends MusicBeatState
 			case 'gf':
 				dad.setPosition(gf.x, gf.y);
 				gf.visible = false;
-				if (isStoryMode)
-				{
-					camPos.x += 600;
-					tweenCamIn();
-				}
 
 			case "spookykids":
 				camPos.y -= 400;
@@ -614,12 +609,7 @@ class PlayState extends MusicBeatState
 			case "kevin":
 				dad.setPosition(gf.x, gf.y);
 				gf.visible = false;
-				if (isStoryMode)
-				{
-					camPos.x -= 400;
-					camPos.y += 0;
-					tweenCamIn();
-				}
+
 			case "monster":
 				dad.y += 100;
 			case 'monster-christmas':
