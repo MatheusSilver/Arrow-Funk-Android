@@ -673,9 +673,19 @@ class PlayState extends MusicBeatState
 					if (dad.curCharacter == 'dad-fire')
 					{
 						dad.x += 30;
-						dad.y += 200;					
-					
+						dad.y += 200;
 					}
+
+					if(!FlxG.save.data.cenoptim){
+						if (dad.curCharacter == 'dad-fire')
+							{
+								dad.x -= 80;
+								dad.y -= 50;
+								boyfriend.x += 350;
+								boyfriend.y -= 40;
+							}
+					}
+
 					if (gf.curCharacter == 'gf')
 						{
 							gf.x -= 90;
@@ -702,6 +712,16 @@ class PlayState extends MusicBeatState
 						dad.y += 200;					
 					
 					} //Por segurança...
+
+					if(!FlxG.save.data.cenoptim){
+						if (dad.curCharacter == 'dad-fire')
+							{
+								dad.x -= 20;
+								dad.y += 50;
+								boyfriend.x += 250;
+								boyfriend.y += 20;
+							}
+					}
 					gf.scrollFactor.set(0.9, 0.9);
 					boyfriend.scrollFactor.set(0.9, 0.9);
 					dad.scrollFactor.set(0.9, 0.9);
@@ -713,6 +733,12 @@ class PlayState extends MusicBeatState
 				dad.x -= 180;
 				gf.x -= 168;
 				gf.y += 10;
+				if(!FlxG.save.data.cenoptim){
+							dad.x -= 100;
+							dad.y += 120;
+							boyfriend.x += 450;
+							boyfriend.y -= 40;
+				}
 				
 				gf.scrollFactor.set(1, 1);
 
@@ -4114,18 +4140,13 @@ class PlayState extends MusicBeatState
 			if(FlxG.save.data.personas)
 			{
 
-				if (curStep == 60)
+				if (curStep == 30)
 					{
 						remove(dad);
-						dad = new Character(-100, 120, 'spookykids-happy'); //Por favor não dê lag ou ficarei triste
+						dad = new Character(-100, 120, 'spookykids'); //Uma solução deveras engenhosa eu diria...
 						add(dad);
 					}
-					if (curStep == 160)
-						{
-							remove(dad);
-							dad = new Character(-80, 140, 'spookykids'); //Por favor não dê lag ou ficarei triste
-							add(dad);
-						}
+
 				if (curStep == 2176)
 				{
 					remove(dad);

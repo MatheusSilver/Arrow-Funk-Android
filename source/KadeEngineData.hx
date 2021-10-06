@@ -21,9 +21,6 @@ class KadeEngineData
         if (FlxG.save.data.osus == null)
 			FlxG.save.data.osus = false;
 
-        if (FlxG.save.data.otimizacaoforcada == null)
-			FlxG.save.data.otimizacaoforcada = true;
-
 		if (FlxG.save.data.downscroll == null)
 			FlxG.save.data.downscroll = false;
 
@@ -59,10 +56,10 @@ class KadeEngineData
 			FlxG.save.data.fpsRain = false;
 
 		if (FlxG.save.data.fpsCap == null)
-			FlxG.save.data.fpsCap = 60;
+			FlxG.save.data.fpsCap = 120;
 
 		if (FlxG.save.data.fpsCap > 285 || FlxG.save.data.fpsCap < 60)
-			FlxG.save.data.fpsCap = 60; // baby proof so you can't hard lock ur copy of kade engine
+			FlxG.save.data.fpsCap = 120; // baby proof so you can't hard lock ur copy of kade engine
 		
 		if (FlxG.save.data.scrollSpeed == null)
 			FlxG.save.data.scrollSpeed = 1;

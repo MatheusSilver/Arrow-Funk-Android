@@ -192,7 +192,7 @@ class TitleState extends MusicBeatState
 		gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 		gfDance.y = 20;
 		gfDance.x = -65;
-		gfDance.setGraphicSize(FlxG.width * 2); //I FORGOR!!! (Mentira, na verdade eu nem sabia...)
+		gfDance.setGraphicSize(FlxG.width); //I FORGOR!!! (Mentira, na verdade eu nem sabia...)
 		gfDance.updateHitbox(); //Eu odeio minha vida kekw
 		if(FlxG.save.data.antialiasing)
 			{

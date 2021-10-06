@@ -32,6 +32,7 @@ class OptionsMenu extends MusicBeatState
 			new AccuracyDOption("Muda como a precisão é calculada. (Precisa = Simples, Complexa = baseada em milisegundos)")
 		]),
 		new OptionCategory("Aparencia", [
+			new FPSOption("Mosra ou não o FPS"),
 			new RainbowFPSOption("Deixa o FPS bem gay"),
 			new AccuracyOption("Mostra informações sobre a precisão"),
 			new SongPositionOption("Mostra sua posição na musica (como uma barra)"),
@@ -39,10 +40,9 @@ class OptionsMenu extends MusicBeatState
 		]),
 		
 		new OptionCategory("trens", [
-			new FPSOption("Mosra ou não o FPS"),
 			new Osukengo("Ok... Só falta querer jogar osu... Não... Espera, NEM PENSE EM ATIVAR ISSO..."),
 			new FlashingLightsOption("Tira as luzes piscantes"),
-			new BotPlay("IIIIIIII AREGOU (tente passar da week 2 com isso kkkkkk)")
+			new BotPlay("Apenas sente e relaxe, o bot fará tudo pra você? Menos jogar a week 2 no hard...")
 		]),
 
 		new OptionCategory("Config mobile", [
@@ -51,11 +51,11 @@ class OptionsMenu extends MusicBeatState
 		]),
 		
 		new OptionCategory("Optimizacao", [
-			new GfOptim("Tire a GF do game"),
-			new Personas("Tira os boneco do jogo"),
-			new Sicksresponse("Remova as mensagens de combo e sicks do game"),
-			new CenarioOptim("Remova os cenários do game"),
-			new DistractionsAndEffectsOption("Tire alguns efeitos leves do game")
+			new GfOptim("Remove a GF do jogo"),
+			new Personas("Remove os personagens  do jogo"),
+			new Sicksresponse("Remova as mensagens de combo e sicks do jogo"),
+			new CenarioOptim("Remova os cenários do jogo"),
+			new DistractionsAndEffectsOption("Tire alguns efeitos leves do jogo")
 		])
 	];
 

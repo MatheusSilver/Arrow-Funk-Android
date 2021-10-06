@@ -23,7 +23,7 @@ class MenuCharacter extends FlxSprite
 {
 	private static var settings:Map<String, CharacterSetting> = [
 		'bf' => new CharacterSetting(-400, -175, 0.64, true),
-		'gf' => new CharacterSetting(395, 0, 2.2, true),
+		'gf' => new CharacterSetting(395, 50, 2.2, true),
 		'dad' => new CharacterSetting(-200, 50, 1.1),
 		'spookykids' => new CharacterSetting(-175, 20, 1.5),
 		'kevin' => new CharacterSetting(-350, 0, 2.78),

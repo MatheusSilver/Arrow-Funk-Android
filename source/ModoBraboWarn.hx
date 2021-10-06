@@ -34,7 +34,7 @@ class ModoBraboWarn extends MusicBeatState
 
         new FlxTimer().start(2, function(xd:FlxTimer)
         {
-            FlxTween.tween(image, {alpha: 1}, 1);
+            FlxTween.tween(image, {alpha: 0.5}, 1);
         });
         
 		#if mobileC

@@ -199,7 +199,7 @@ class FreeplayState extends MusicBeatState
 
 		if (controls.BACK)
 		{
-			FlxG.switchState(new MainMenuState());
+			LoadingState.loadAndSwitchState(new MainMenuState());
 		}
 
 		if (accepted)
@@ -233,7 +233,7 @@ class FreeplayState extends MusicBeatState
 				LoadingState.loadAndSwitchState(new PlayState(), true);
 			}
 			if(FlxG.save.data.godoptimize){
-				FlxG.switchState(new ModoBraboWarn(true, 'soundtest')); //Isso obviamente não é do meu port do Sonic.APK
+				LoadingState.loadAndSwitchState(new ModoBraboWarn(true, 'soundtest')); //Isso obviamente não é do meu port do Sonic.APK
 			}
 					
 		}

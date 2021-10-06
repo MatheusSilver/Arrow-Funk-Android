@@ -173,7 +173,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollow, null, 0.60 * (60 / FlxG.save.data.fpsCap));
 
-		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, gameVer +  ("Port por Matheus Silver"), 12);
+		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, ("Mod original por Yosaibo e Port para Android por Team Silver"), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -216,11 +216,6 @@ class MainMenuState extends MusicBeatState
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 				changeItem(1);
-			}
-
-			if (controls.BACK)
-			{
-				FlxG.switchState(new TitleState());
 			}
 
 			if (controls.ACCEPT)
@@ -286,15 +281,15 @@ class MainMenuState extends MusicBeatState
 		switch (daChoice)
 		{
 			case 'story mode':
-				FlxG.switchState(new StoryMenuState());
+				LoadingState.loadAndSwitchState(new StoryMenuState());
 				trace("Story Menu Selected");
 			case 'freeplay':
-				FlxG.switchState(new FreeplayState());
+				LoadingState.loadAndSwitchState(new FreeplayState());
 
 				trace("Freeplay Menu Selected");
 
 			case 'options':
-				FlxG.switchState(new OptionsMenu());
+				LoadingState.loadAndSwitchState(new OptionsMenu());
 		}
 	}
 

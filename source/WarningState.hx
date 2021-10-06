@@ -4,11 +4,9 @@ import flixel.*;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import ui.FlxVirtualPad;
+import flixel.util.FlxTimer;
 
-/**
- * ...
- * @author Silvio
- */
+
 class WarningState extends FlxState
 {
 	var virtualpad:FlxVirtualPad;
@@ -25,14 +23,21 @@ class WarningState extends FlxState
 		
 		var warning:FlxSprite = new FlxSprite(0, 0);
 		warning.loadGraphic("assets/images/Algo que roubei do Lucas Aventuras.png", false, 1280, 720);
-		add(warning);
+        warning.alpha = 0;
+        warning.screenCenter();
+        add(warning);
+
+        new FlxTimer().start(2, function(xd:FlxTimer)
+        {
+            FlxTween.tween(warning, {alpha: 1}, 1);
+        });
 	}
 	public override function update(elapsed){
 		
 		for (touch in FlxG.touches.list)
 		{
+			FlxG.sound.play(Paths.sound('confirmMenu'));
 			if (touch.justPressed)
-				FlxG.sound.play(Paths.sound('confirmMenu'));
 				FlxG.switchState(new TitleState());
 			}
 

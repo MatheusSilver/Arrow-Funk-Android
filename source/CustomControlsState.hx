@@ -94,10 +94,10 @@ class CustomControlsState extends MusicBeatSubstate
 
 
 		//text
-		up_text = new FlxText(200, 200, 0,"Button up x:" + _pad.buttonUp.x +" y:" + _pad.buttonUp.y, 24);
-		down_text = new FlxText(200, 250, 0,"Button down x:" + _pad.buttonDown.x +" y:" + _pad.buttonDown.y, 24);
-		left_text = new FlxText(200, 300, 0,"Button left x:" + _pad.buttonLeft.x +" y:" + _pad.buttonLeft.y, 24);
-		right_text = new FlxText(200, 350, 0,"Button right x:" + _pad.buttonRight.x +" y:" + _pad.buttonRight.y, 24);
+		up_text = new FlxText(200, 200, 0,"Coordenadas cima x" + _pad.buttonUp.x +" y:" + _pad.buttonUp.y, 24);
+		down_text = new FlxText(200, 250, 0,"Coordenadas baixo x" + _pad.buttonDown.x +" y:" + _pad.buttonDown.y, 24);
+		left_text = new FlxText(200, 300, 0,"Coordenadas esquerda x:" + _pad.buttonLeft.x +" y:" + _pad.buttonLeft.y, 24);
+		right_text = new FlxText(200, 350, 0,"Coordenadas direita x:" + _pad.buttonRight.x +" y:" + _pad.buttonRight.y, 24);
 
 		//hitboxes
 
@@ -315,10 +315,10 @@ class CustomControlsState extends MusicBeatSubstate
 	}
 
 	function setbuttontexts() {
-		up_text.text = "Button up x:" + _pad.buttonUp.x +" y:" + _pad.buttonUp.y;
-		down_text.text = "Button down x:" + _pad.buttonDown.x +" y:" + _pad.buttonDown.y;
-		left_text.text = "Button left x:" + _pad.buttonLeft.x +" y:" + _pad.buttonLeft.y;
-		right_text.text = "Button right x:" + _pad.buttonRight.x +" y:" + _pad.buttonRight.y;
+		up_text.text = "Coordenadas cima x" + _pad.buttonUp.x +" y:" + _pad.buttonUp.y;
+		down_text.text = "Coordenadas baixo x" + _pad.buttonDown.x +" y:" + _pad.buttonDown.y;
+		left_text.text = "Coordenadas esquerda x:" + _pad.buttonLeft.x +" y:" + _pad.buttonLeft.y;
+		right_text.text = "Coordenadas direita x:" + _pad.buttonRight.x +" y:" + _pad.buttonRight.y;
 	}
 
 
