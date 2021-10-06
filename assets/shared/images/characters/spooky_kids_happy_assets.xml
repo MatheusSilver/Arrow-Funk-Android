@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="spooky_kids_happy_assets.png">
-	<!-- Created with Adobe Animate version 18.0.1.115 -->
-	<!-- http://www.adobe.com/products/animate.html -->
+	<!-- Criado pelo otimizador automático do Silver e com ajustes manuais da Bright -->
 	<SubTexture name="spooky dance idle0000" x="0" y="0" width="521" height="671" pivotX="193.45" pivotY="394.1"/>
 	<SubTexture name="spooky dance idle0001" x="0" y="0" width="521" height="671"/>
 	<SubTexture name="spooky dance idle0002" x="523" y="0" width="521" height="671"/>

@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="GF_assets_pink.png">
-	<!-- Created with Adobe Animate version 18.0.1.115 -->
-	<!-- http://www.adobe.com/products/animate.html -->
+	<!-- Criado pelo otimizador automático do Silver e com ajustes manuais da Bright -->
 	<SubTexture name="GF Dancing Beat0000" x="0" y="0" width="703" height="649" pivotX="149.4" pivotY="310.85"/>
 	<SubTexture name="GF Dancing Beat0001" x="705" y="0" width="703" height="649"/>
 	<SubTexture name="GF Dancing Beat0002" x="1410" y="0" width="703" height="649"/>

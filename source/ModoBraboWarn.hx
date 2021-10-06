@@ -54,6 +54,7 @@ class ModoBraboWarn extends MusicBeatState
 
         if (controls.BACK)
             {
+                FlxG.sound.play(Paths.sound('cancelMenu'));
                 LoadingState.loadAndSwitchState(new MainMenuState(), true);
             }
         

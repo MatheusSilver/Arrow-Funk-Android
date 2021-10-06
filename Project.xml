@@ -30,7 +30,6 @@
 	<window if="mobile" orientation="landscape" fullscreen="true" width="1280" height="720" resizable="false"/>
 	<define name="mobileC" if="mobile" />
 	<assets path="assets/shared/images/hitbox"/>
-	<define name="MODS_ALLOWED" unless="web" />
 
 	<!--Switch-specific-->
 	<window if="switch" orientation="landscape" fullscreen="true" width="0" height="0" resizable="true" />

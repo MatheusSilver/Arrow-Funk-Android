@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="DADDY_DEAREST.png">
-	<!-- Created with Adobe Animate version 18.0.1.115 -->
-	<!-- http://www.adobe.com/products/animate.html -->
+	<!-- Criado pelo otimizador automático do Silver e com ajustes manuais da Bright -->
 	<SubTexture name="Dad Sing Note DOWN0000" x="0" y="0" width="458" height="707" frameX="0" frameY="-12" frameWidth="458" frameHeight="719"/>
 	<SubTexture name="Dad Sing Note DOWN0001" x="0" y="0" width="458" height="707" frameX="0" frameY="-12" frameWidth="458" frameHeight="719"/>
 	<SubTexture name="Dad Sing Note DOWN0002" x="460" y="0" width="445" height="718" frameX="-3" frameY="-1" frameWidth="458" frameHeight="719"/>

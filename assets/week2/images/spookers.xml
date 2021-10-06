@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="spookers.png">
-	<!-- Created with Adobe Animate version 18.0.1.115 -->
-	<!-- http://www.adobe.com/products/animate.html -->
+	<!-- Criado pelo otimizador automático do Silver e com ajustes manuais da Bright -->
 	<SubTexture name="SPEAKERS0000" x="0" y="0" width="2755" height="1001" frameX="0" frameY="0" frameWidth="2756" frameHeight="1001"/>
 	<SubTexture name="SPEAKERS0001" x="0" y="1003" width="2751" height="1001" frameX="0" frameY="0" frameWidth="2756" frameHeight="1001"/>
 	<SubTexture name="SPEAKERS0002" x="0" y="1003" width="2751" height="1001" frameX="0" frameY="0" frameWidth="2756" frameHeight="1001"/>

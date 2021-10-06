@@ -211,7 +211,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24);
 				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
 				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
-				trace("tenho quase certeza de que fiz merda, mas só pra conferir");
+
 				addOffset("idle", 0, 7);
 				addOffset("singUP", -5, 57);
 				addOffset("singRIGHT", 0, 27);
@@ -235,16 +235,16 @@ class Character extends FlxSprite
 
 				animation.addByPrefix('micend', 'Dad end animation', 24);
 
-				addOffset("idle", 0, 17);
+				addOffset("idle", -256, 17);
 
-				addOffset("throwmic", 54, 93);
+				addOffset("throwmic", -182, 93);
 
-				addOffset("micend", -3, -44);
+				addOffset("micend", -236, -39);
 				
-				addOffset("singUP", 5, 77);
-				addOffset("singRIGHT", 0, 38);
-				addOffset("singLEFT", 57, 25);
-				addOffset("singDOWN", 4, -39);
+				addOffset("singUP", -258, 77);
+				addOffset("singRIGHT", -253, 38);
+				addOffset("singLEFT", -209, 18);
+				addOffset("singDOWN", -256, -39);
 
 				playAnim('idle');
 			case 'spookykids':
@@ -262,13 +262,13 @@ class Character extends FlxSprite
 
 				animation.addByPrefix('scared', 'spooky scary', 24); //skeletons
 
-				addOffset("idle", 0, 0);
-				addOffset("singUP", 58, 100);
-				addOffset("singLEFT", 90, 13);
-				addOffset("singRIGHT", 85, 21);
-				addOffset("singDOWN", -46, -103);
-				addOffset("hey", 81, 57);
-				addOffset("scared",2, -22);
+				addOffset("idle", -90, -365);
+				addOffset("singUP", -43, -258);
+				addOffset("singLEFT", -15, -349);
+				addOffset("singRIGHT", -8, -342);
+				addOffset("singDOWN", -147, -466);
+				addOffset("hey", -17, -208);
+				addOffset("scared", -108, -389);
 
 				playAnim('idle');
 			case 'spookykids-happy':
@@ -486,7 +486,6 @@ class Character extends FlxSprite
 				dadVar = 6.1;
 			if (holdTimer >= Conductor.stepCrochet * dadVar * 0.001)
 			{
-				trace('dance');
 				dance();
 				holdTimer = 0;
 			}

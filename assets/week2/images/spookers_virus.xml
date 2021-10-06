@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="spookers_virus.png">
-	<!-- Created with Adobe Animate version 18.0.1.115 -->
-	<!-- http://www.adobe.com/products/animate.html -->
+	<!-- Criado pelo otimizador automático do Silver e com ajustes manuais da Bright -->
 	<SubTexture name="SPEAKERS_VIRUS0000" x="0" y="0" width="2756" height="1001" pivotX="1339.6" pivotY="465.95"/>
 	<SubTexture name="SPEAKERS_VIRUS0001" x="0" y="1003" width="2756" height="1001"/>
 	<SubTexture name="SPEAKERS_VIRUS0002" x="0" y="1003" width="2756" height="1001"/>

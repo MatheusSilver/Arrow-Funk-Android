@@ -600,9 +600,9 @@ class PlayState extends MusicBeatState
 				}
 
 			case "spookykids":
-				camPos.y -= 1000;
+				camPos.y -= 400;
 				camPos.x += 300;
-				dad.y -=0;
+				dad.y += 100;
 			case "spookykids-happy":
 				camPos.y -= 400;
 				camPos.x += 300;
@@ -616,8 +616,8 @@ class PlayState extends MusicBeatState
 				gf.visible = false;
 				if (isStoryMode)
 				{
-					camPos.x -= 300;
-					camPos.y -= 150;
+					camPos.x -= 400;
+					camPos.y += 0;
 					tweenCamIn();
 				}
 			case "monster":
@@ -676,6 +676,12 @@ class PlayState extends MusicBeatState
 						dad.y += 200;					
 					
 					}
+					if (gf.curCharacter == 'gf')
+						{
+							gf.x -= 90;
+							gf.y -= 125;					
+						
+						}
 					if (dad.curCharacter == 'kevin')
 					{
 
@@ -692,7 +698,7 @@ class PlayState extends MusicBeatState
 					gf.x -= 175;
 					if (dad.curCharacter == 'dad-fire')
 					{
-						dad.x += 30;
+						dad.x += 90;
 						dad.y += 200;					
 					
 					} //Por segurança...
@@ -703,12 +709,6 @@ class PlayState extends MusicBeatState
 			case 'spookyparty':
 				boyfriend.y += 100;
 				boyfriend.x += 35;
-				if (dad.curCharacter == 'spookykids')
-					{
-					dad.x += 150;
-					dad.y += 450;					
-					
-					} //Por segurança...
 				dad.y -= 40;
 				dad.x -= 180;
 				gf.x -= 168;
@@ -891,7 +891,7 @@ class PlayState extends MusicBeatState
 			}
 
 		// Add Kade Engine watermark
-		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Dificil" : storyDifficulty == 1 ? "Normal" : "Easy") + (""), 16);
+		kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Dificil" : storyDifficulty == 1 ? "Normal" : "Easy") + (FlxG.save.data.godoptimize ? " - Modo Brabo " : ""), 16);
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
@@ -4113,14 +4113,29 @@ class PlayState extends MusicBeatState
 			
 			if(FlxG.save.data.personas)
 			{
+
+				if (curStep == 60)
+					{
+						remove(dad);
+						dad = new Character(-100, 120, 'spookykids-happy'); //Por favor não dê lag ou ficarei triste
+						add(dad);
+					}
+					if (curStep == 160)
+						{
+							remove(dad);
+							dad = new Character(-80, 140, 'spookykids'); //Por favor não dê lag ou ficarei triste
+							add(dad);
+						}
 				if (curStep == 2176)
 				{
 					remove(dad);
-					dad = new Character(-80, 140, 'spookykids-happy'); //Por favor não dê lag ou ficarei triste
+					dad = new Character(-100, 120, 'spookykids-happy'); //Por favor não dê lag ou ficarei triste
 					add(dad);
 				}
 			}
 		//ACHOU QUE EU IA ESQUECER CLARA TUA VAGARANHA!!
+		//Não achei não ^^
+		//Eu tinha certeza
 
 		}
 		else if (curSong == 'Virus') 
